@@ -7,12 +7,12 @@ const {
   } = require('../controller/product_controller');
 
 // Route to get all products
-router.get('/products',getProducts);
+router.get('/',getProducts);
 
 // Route to get a product by its ID
-router.get('/products/:id', getProductById);
+router.get('/:id', getProductById);
 
 // Route to create a new product
-router.post('/products/save', saveProduct);
+router.post('/save', saveProduct);
 
 module.exports = router;
